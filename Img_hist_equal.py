@@ -47,7 +47,7 @@ imgeq = histeq(divide2)[0]
 imgeqhist = plt.hist(imgeq.flatten(),128) # Histogram Equalization
 imgplot = plt.imshow(imgeq, plt.gray()) # Histogram Equalization 處理後的灰階圖
 
-# 3. f(x) = x - 128 (將影像檢暗)
+# 3. f(x) = x - 128 (將影像減暗)
 subtract128 = img.copy()
 subtract128[subtract128 < 128] = 128
 subtract128 = subtract128 - 128
